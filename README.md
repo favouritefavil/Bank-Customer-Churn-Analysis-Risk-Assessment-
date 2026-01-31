@@ -58,8 +58,11 @@ bank_churn_project/
 
 
 Dashboards
-[View the dashboard](https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
+[View the dashboard 1](https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
 
+[View the dashboard 2](https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00)
+
+[View the dashboard 3](https://github.com/user-attachments/assets/ba7bf9e5-9127-4d41-a6cb-bd05bd219673)
 
 <img width="926" height="751" alt="Customer Portfolio Dashbord 1" src="https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623" />
  <img width="922" height="753" alt="Customer Portfolio Dashbord 2" src="https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00" />
