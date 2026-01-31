@@ -58,7 +58,7 @@ bank_churn_project/
 ├── README.md                          # Project documentation
 ├── analysis.sql                       # SQL queries for analysis
 ├── dashboards/                        # Dashboard screenshots
-│   ├── customer_portfolio_1.PNG
+│   ├── customer_portfolio_1.PNG 
 │   ├── customer_portfolio_2.PNG
 │   └── customer_portfolio_3.PNG
 ├── executive_review/                  # Executive summary document
@@ -244,6 +244,6 @@ Chegwe Favour
 - Role: Financial Data Analyst
 - LinkedIn: www.linkedin.com/in/favour-chegwe
 - Email: favourchegwec@gmail.com
-## 📄 Licenseiving it a star!
+
 
 **Last Updated**: January 2026
