@@ -52,20 +52,22 @@ The bank is experiencing a **13% churn rate**, threatening revenue stability and
 
 ## 📁 Project Structure
 
-```
 bank_churn_project/
-│
-├── README.md                          # Project documentation
-├── analysis.sql                       # SQL queries for analysis
-├── dashboards/                        # Dashboard screenshots
-│   ├── customer_portfolio_1.PNG 
-│   ├── customer_portfolio_2.PNG
-│   └── customer_portfolio_3.PNG
-├── executive_review/                  # Executive summary document
-│   └── Executive_Review.docx
-└── data/
-    └── schema.sql                     # Database schema
-```
+[SQL analysis.sql](https://github.com/user-attachments/files/24978217/SQL.analysis.sql)
+
+
+
+Dashboards
+[View the dashboard](https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
+
+
+<img width="926" height="751" alt="Customer Portfolio Dashbord 1" src="https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623" />
+ <img width="922" height="753" alt="Customer Portfolio Dashbord 2" src="https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00" />
+ <img width="922" height="753" alt="Customer Portfolio Dashbord 3" src="https://github.com/user-attachments/assets/ba7bf9e5-9127-4d41-a6cb-bd05bd219673" />
+
+ 
+[Executive_Review_Customer_Portfolio_Risk.pdf](https://github.com/user-attachments/files/24978289/Executive_Review_Customer_Portfolio_Risk.pdf)
+
 
 ## 📊 Database Schema
 
@@ -244,6 +246,14 @@ Chegwe Favour
 - Role: Financial Data Analyst
 - LinkedIn: www.linkedin.com/in/favour-chegwe
 - Email: favourchegwec@gmail.com
+
+<img width="926" height="751" alt="Customer Portfolio Dashbord 1" src="https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623" />
+<img width="922" height="753" alt="Customer Portfolio Dashbord 2" src="https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00" />
+<img width="922" height="753" alt="Customer Portfolio Dashbord 3" src="https://github.com/user-attachments/assets/ba7bf9e5-9127-4d41-a6cb-bd05bd219673" />
+[SQL analysis.sql](https://github.com/user-attachments/files/24978217/SQL.analysis.sql)
+
+
+
 
 
 **Last Updated**: January 2026
