@@ -53,6 +53,7 @@ The bank is experiencing a **13% churn rate**, threatening revenue stability and
 ## 📁 Project Structure
 
 bank_churn_project/
+
 [SQL analysis.sql](https://github.com/user-attachments/files/24978217/SQL.analysis.sql)
 
 
