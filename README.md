@@ -197,8 +197,8 @@ Business Insights:
 Value concentration risk: 6% of customers hold 48% of deposits
 Clear correlation between engagement and retention
 
-Dashboard 2: Product & Engagement Analysis
-https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00
+Dashboard 2: Product & Engagement (Analysis
+https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00)
 Key Visualizations:
 Average digital engagement score (54.4)
 Average products per customer (2.0)
