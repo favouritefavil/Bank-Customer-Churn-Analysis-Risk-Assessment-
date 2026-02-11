@@ -62,56 +62,6 @@ View the complete analysis dashboards:
 - **Visualization**: Power BI / Tableau (Dashboard images)
 - **Documentation**: Microsoft Word (Executive Review)
 
-## 📁 Project Structure
-
-bank_churn_project/
-│
-├── README.md                                    # Main project documentation
-├── LICENSE                                      # MIT License
-├── .gitignore                                   # Git ignore rules
-├── CONTRIBUTING.md                              # Contribution guidelines
-├── GITHUB_SETUP_GUIDE.md                        # Step-by-step GitHub upload guide
-├── QUICK_REFERENCE.md                           # Git commands cheat sheet
-│
-├── analysis.sql                                 # ⭐ Complete SQL analysis (240+ lines)
-│   │                                            # Contains:
-│   ├── Data Quality Checks                      #   - Missing data validation
-│   ├── KPI Calculations (11 metrics)            #   - Business metrics
-│   ├── Segmentation Analysis                    #   - Customer grouping
-│   ├── Churn Analysis by Multiple Dimensions    #   - Multi-factor churn analysis
-│   ├── Risk Assessment Queries                  #   - At-risk identification
-│   └── Customer Targeting Queries               #   - Retention opportunities
-│
-├── dashboards/                                  # 📊 Power BI Dashboard Screenshots
-│   ├── customer_portfolio_1.PNG                 #   Dashboard 1: Portfolio & Risk Overview
-│   │                                            #   - Total customers & balances
-│   │                                            #   - Active vs dormant distribution
-│   │                                            #   - Value segment breakdown
-│   │                                            #   - Churn by engagement
-│   │
-│   ├── customer_portfolio_2.PNG                 #   Dashboard 2: Product & Engagement
-│   │                                            #   - Digital engagement metrics
-│   │                                            #   - Product depth analysis
-│   │                                            #   - Customer engagement funnel
-│   │                                            #   - Churn by product count
-│   │
-│   └── customer_portfolio_3.PNG                 #   Dashboard 3: Geographic & Risk
-│                                                #   - High-value customers at risk
-│                                                #   - State-level churn rates
-│                                                #   - Activity band analysis
-│                                                #   - Risk status matrix
-│
-├── executive_review/                            # 📄 Executive Documentation
-│   └── Executive_Review_Customer_Portfolio_Risk.docx
-│                                                #   12-page strategic report including:
-│                                                #   - Executive summary
-│                                                #   - 5 critical findings
-│                                                #   - Strategic recommendations
-│                                                #   - Financial impact (₦29.2B)
-│                                                #   - Implementation roadmap
-│
-└── data/
-    └── schema.sql
 
 ## 📊 Database Schema
 
@@ -232,8 +182,9 @@ CREATE TABLE customer (
 ## 🎨 Dashboard Previews
 
 The project includes three comprehensive dashboards visualizing key metrics and insights:
+
 Dashboard 1: Customer Portfolio & Risk 
-📊 [View the dashboard 1]:(https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
+(https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
 Key Visualizations:
 Total customers, churn rate, and active/dormant rates
 Total customer balance (₦302bn) and average balance per customer
@@ -246,8 +197,8 @@ Business Insights:
 Value concentration risk: 6% of customers hold 48% of deposits
 Clear correlation between engagement and retention
 
-[View the dashboard 2](https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00): Product & Engagement Analysis
-📊 View Dashboard
+Dashboard 2: Product & Engagement Analysis
+(https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00)
 Key Visualizations:
 Average digital engagement score (54.4)
 Average products per customer (2.0)
@@ -260,9 +211,8 @@ Product depth is the strongest predictor of retention
 900K single-product customers represent massive cross-sell opportunity
 Digital engagement score of 54.4 shows room for improvement
 
-[View the dashboard 3](https://github.com/user-attachments/assets/ba7bf9e5-9127-4d41-a6cb-bd05bd219673)
-: Geographic & Risk Distribution
-📊 View Dashboard
+dashboard 3: Geographic & Risk Distribution
+(https://github.com/user-attachments/assets/ba7bf9e5-9127-4d41-a6cb-bd05bd219673)
 Key Visualizations:
 High-value customers at risk (3,260 customers)
 High-value customer ratio (6.1)
