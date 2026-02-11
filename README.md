@@ -12,7 +12,7 @@ The bank is experiencing a **13% churn rate**, threatening revenue stability and
 📊 Interactive Dashboards
 View the complete analysis dashboards:
 
-[View the dashboard 1]:(https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
+[View the dashboard 1](https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
  Portfolio & Risk Overview - Customer distribution, value segments, engagement metrics
 
 [View the dashboard 2](https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00)
