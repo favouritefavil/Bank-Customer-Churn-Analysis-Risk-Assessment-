@@ -67,6 +67,11 @@ View the complete analysis dashboards:
 bank_churn_project/
 │
 ├── README.md                                    # Main project documentation
+├── LICENSE                                      # MIT License
+├── .gitignore                                   # Git ignore rules
+├── CONTRIBUTING.md                              # Contribution guidelines
+├── GITHUB_SETUP_GUIDE.md                        # Step-by-step GitHub upload guide
+├── QUICK_REFERENCE.md                           # Git commands cheat sheet
 │
 ├── analysis.sql                                 # ⭐ Complete SQL analysis (240+ lines)
 │   │                                            # Contains:
@@ -106,8 +111,7 @@ bank_churn_project/
 │                                                #   - Implementation roadmap
 │
 └── data/
-    └── schema.sql     
-
+    └── schema.sql
 
 ## 📊 Database Schema
 
