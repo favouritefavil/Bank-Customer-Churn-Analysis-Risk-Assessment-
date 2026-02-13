@@ -63,7 +63,7 @@ View the complete analysis dashboards:
 bank_churn_project/
 │
 ├── README.md                                 
-│   │                                           
+│   │── Sql                                         
 │   ├── Data Quality Checks                     
 │   ├── KPI Calculations (11 metrics)            
 │   ├── Segmentation Analysis                    
