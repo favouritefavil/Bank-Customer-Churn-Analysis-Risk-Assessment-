@@ -22,7 +22,7 @@ This project identifies key drivers of customer attrition and provides data-driv
 - **High-Value Customer Ratio**: 6.1%
 - **Customers at Risk**: 3,260 high-value customers (₦6.5B in deposits)
 
-### 📊 Interactive Dashboards
+### 📊 Dashboards
 View the complete analysis dashboards:
 - **[Portfolio & Risk Overview](dashboards/customer_portfolio_1.PNG)** - Customer distribution, value segments, engagement metrics
 - **[Product & Engagement Analysis](dashboards/customer_portfolio_2.PNG)** - Product depth, digital engagement, customer funnel
@@ -54,8 +54,8 @@ View the complete analysis dashboards:
 
 - **Database**: PostgreSQL
 - **Analysis**: SQL
-- **Visualization**: Power BI / Tableau (Dashboard images)
-- **Documentation**: Microsoft Word (Executive Review)
+- **Visualization**: Power BI 
+- **Documentation**: Notion
 
 ## 📁 Project Files
 
@@ -64,19 +64,14 @@ bank_churn_project/
 │
 ├── README.md                                 
 │   │── Sql                                         
-│   ├── Data Quality Checks                     
-│   ├── KPI Calculations (11 metrics)            
-│   ├── Segmentation Analysis                    
-│   ├── Churn Analysis by Multiple Dimensions   
-│   ├── Risk Assessment Queries                 
-│   └── Customer Targeting Queries            
+│   ├── SQL_Analysis_documentation.md            
 │
 ├── dashboards/                                 
 │   ├── customer_portfolio_1.PNG                 
 │   │
 │   ├── customer_portfolio_2.PNG                
 │   │
-│   └── customer_portfolio_3.PNG                 
+│   └── customer_portfolio_3.PNG          
 │
 ├── executive_review/                           
 │   └── Executive_Review_Customer_Portfolio_Risk.docx
@@ -172,38 +167,6 @@ bank_churn_project/
 | Predictive Modeling | ₦9.1B | 180-365 days |
 
 
-
-## 🚀 Getting Started
-
-### Prerequisites
-- PostgreSQL database
-- SQL client (pgAdmin, DBeaver, or similar)
-- Power BI or Tableau for visualization
-
-### Running the Analysis
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/bank-churn-analysis.git
-cd bank-churn-analysis
-```
-
-2. **Set up the database**
-```bash
-psql -U your_username -d your_database -f schema.sql
-# Load your data into the customer table
-```
-
-3. **Run the analysis queries**
-```bash
-psql -U your_username -d your_database -f analysis.sql
-```
-
-4. **Review the results**
-- Check query outputs in your SQL client
-- Review dashboard images in `/dashboards/`
-- Read executive summary in `/executive_review/`
-
 ## 📝 Key SQL Queries
 
 ### Churn Rate by Engagement Band
@@ -297,3 +260,8 @@ Chegwe Favour
 
 
 **Last Updated**: January 2026
+
+
+
+
+
