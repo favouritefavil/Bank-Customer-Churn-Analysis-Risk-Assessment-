@@ -179,48 +179,7 @@ CREATE TABLE customer (
 | Onboarding Optimization | ₦2.3B | 120-180 days |
 | Predictive Modeling | ₦9.1B | 180-365 days |
 
-## 🎨 Dashboard Previews
 
-The project includes three comprehensive dashboards visualizing key metrics and insights:
-
-Dashboard 1: Customer Portfolio & Risk 
-(https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
-Key Visualizations:
-Total customers, churn rate, and active/dormant rates
-Total customer balance (₦302bn) and average balance per customer
-Active vs Dormant customer distribution (1.7M vs 0.24M)
-Customer balance by value segment (High: 48%, Medium: 37%, Low: 15%)
-Churn rate by engagement band (Low: 21%, Medium: 12%, High: 8%)
-Total customers by engagement band distribution
-Business Insights:
-88% active customer rate indicates strong engagement baseline
-Value concentration risk: 6% of customers hold 48% of deposits
-Clear correlation between engagement and retention
-
-Dashboard 2: Product & Engagement (Analysis
-https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00)
-Key Visualizations:
-Average digital engagement score (54.4)
-Average products per customer (2.0)
-Customer distribution by product depth (1-4+ products)
-Churn rate by product depth (20% for 1 product, 4% for 4+ products)
-Customer engagement funnel showing conversion at each stage
-Value segment performance matrix (customer count, balance, churn rate)
-Business Insights:
-Product depth is the strongest predictor of retention
-900K single-product customers represent massive cross-sell opportunity
-Digital engagement score of 54.4 shows room for improvement
-
-dashboard 3: Geographic & Risk Distribution
-(https://github.com/user-attachments/assets/ba7bf9e5-9127-4d41-a6cb-bd05bd219673)
-Key Visualizations:
-High-value customers at risk (3,260 customers)
-High-value customer ratio (6.1)
-Churn rate by activity band (0-30 days, 31-60 days, 61-90 days, 90+ days)
-Churn rate by state (geographic heat map)
-Top 5 states by customer count
-Dormant customer rate by account age (6-12 months, 1+ years, <6 months)
-Risk status matrix (At Risk, Churned, Stable) by value segment
 
 Business Insights:
 Geographic churn rates relatively consistent (11-14%) across major states
