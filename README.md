@@ -1,27 +1,16 @@
-
 # Bank Customer Churn Analysis & Risk Assessment
 
 ## 📊 Project Overview
 
-A comprehensive data analytics project analyzing customer portfolio health, churn patterns, and retention strategies for a Nigerian bank with 2 million customers and ₦302 billion in deposits.
+A comprehensive data analytics project analyzing customer
+portfolio health, churn patterns, and retention strategies for a Nigerian bank with 2 million customers and ₦302 billion in deposits.
 
 ## 🎯 Business Problem
 
-The bank is experiencing a **13% churn rate**, threatening revenue stability and long-term growth. This project identifies key drivers of customer attrition and provides data-driven recommendations to improve retention.
+The bank is experiencing a **13% churn rate**, threatening revenue stability and long-term growth. 
+This project identifies key drivers of customer attrition and provides data-driven recommendations to improve retention.
 
-📊 Interactive Dashboards
-View the complete analysis dashboards:
-
-[View the dashboard 1](https://github.com/user-attachments/assets/a386a3cc-de6f-4fa7-bdf2-6f4cb3b8c623)
- Portfolio & Risk Overview - Customer distribution, value segments, engagement metrics
-
-[View the dashboard 2](https://github.com/user-attachments/assets/ddaa89ff-8a60-496d-931c-37aaa9808d00)
-: Product & Engagement Analysis - Product depth, digital engagement, customer funnel
-
-[View the dashboard 3](https://github.com/user-attachments/assets/ba7bf9e5-9127-4d41-a6cb-bd05bd219673)
-: Geographic & Risk Distribution - State-level analysis, activity patterns, risk matrix
-
-## 📈 Key Findings
+## 📊 Key Findings
 
 ### Critical Metrics
 - **Total Customers**: 2,000,000
@@ -32,6 +21,12 @@ View the complete analysis dashboards:
 - **Average Balance per Customer**: ₦151,123
 - **High-Value Customer Ratio**: 6.1%
 - **Customers at Risk**: 3,260 high-value customers (₦6.5B in deposits)
+
+### 📊 Interactive Dashboards
+View the complete analysis dashboards:
+- **[Portfolio & Risk Overview](dashboards/customer_portfolio_1.PNG)** - Customer distribution, value segments, engagement metrics
+- **[Product & Engagement Analysis](dashboards/customer_portfolio_2.PNG)** - Product depth, digital engagement, customer funnel
+- **[Geographic & Risk Distribution](dashboards/customer_portfolio_3.PNG)** - State-level analysis, activity patterns, risk matrix
 
 ### Top Insights
 
@@ -62,37 +57,34 @@ View the complete analysis dashboards:
 - **Visualization**: Power BI / Tableau (Dashboard images)
 - **Documentation**: Microsoft Word (Executive Review)
 
+## 📁 Project Files
 
-## 📊 Database Schema
+```
+bank_churn_project/
+│
+├── README.md                                 
+│   │                                           
+│   ├── Data Quality Checks                     
+│   ├── KPI Calculations (11 metrics)            
+│   ├── Segmentation Analysis                    
+│   ├── Churn Analysis by Multiple Dimensions   
+│   ├── Risk Assessment Queries                 
+│   └── Customer Targeting Queries            
+│
+├── dashboards/                                 
+│   ├── customer_portfolio_1.PNG                 
+│   │
+│   ├── customer_portfolio_2.PNG                
+│   │
+│   └── customer_portfolio_3.PNG                 
+│
+├── executive_review/                           
+│   └── Executive_Review_Customer_Portfolio_Risk.docx
+│
+└── data/
+    └── schema.sql                               
 
-```sql
-CREATE TABLE customer (
-    customer_id VARCHAR(25),
-    snapshot_date DATE,
-    age INTEGER,
-    gender VARCHAR(25),
-    monthly_income_ngn NUMERIC(18, 2),
-    state VARCHAR(25),
-    kyc_tier VARCHAR(25),
-    account_age_days INTEGER,
-    products_count INTEGER,
-    has_savings_account BOOLEAN,
-    has_current_account BOOLEAN,
-    has_loan BOOLEAN,
-    has_debit_card BOOLEAN,
-    has_credit_card BOOLEAN,
-    has_wallet BOOLEAN,
-    has_investment BOOLEAN,
-    total_balance_ngn NUMERIC(18, 2),
-    transaction_count_30d INTEGER,
-    transaction_volume_ngn_30d NUMERIC(18, 2),
-    days_since_last_transaction INTEGER,
-    dormant_flag BOOLEAN,
-    digital_engagement_score INTEGER,
-    churn_30d BOOLEAN,
-    churn_90d BOOLEAN,
-    PRIMARY KEY (customer_id, snapshot_date)
-);
+
 ```
 
 ## 🔍 Analysis Performed
@@ -181,10 +173,36 @@ CREATE TABLE customer (
 
 
 
-Business Insights:
-Geographic churn rates relatively consistent (11-14%) across major states
-Inactivity strongly predicts churn - 90+ days inactive shows highest risk
-Account age patterns reveal onboarding challenges in first 6 months
+## 🚀 Getting Started
+
+### Prerequisites
+- PostgreSQL database
+- SQL client (pgAdmin, DBeaver, or similar)
+- Power BI or Tableau for visualization
+
+### Running the Analysis
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/bank-churn-analysis.git
+cd bank-churn-analysis
+```
+
+2. **Set up the database**
+```bash
+psql -U your_username -d your_database -f schema.sql
+# Load your data into the customer table
+```
+
+3. **Run the analysis queries**
+```bash
+psql -U your_username -d your_database -f analysis.sql
+```
+
+4. **Review the results**
+- Check query outputs in your SQL client
+- Review dashboard images in `/dashboards/`
+- Read executive summary in `/executive_review/`
 
 ## 📝 Key SQL Queries
 
@@ -215,8 +233,48 @@ WHERE total_balance_ngn >= 500000
   AND churn_90d = FALSE
   AND (digital_engagement_score < 40 OR days_since_last_transaction > 60);
 ```
-View complete analysis: See [SQL analysis.sql](https://github.com/user-attachments/files/24978217/SQL.analysis.sql)
- for all 20+ queries including geographic analysis, dormancy patterns, and cross-sell targeting.
+
+### Churn Rate by Product Depth
+```sql
+SELECT
+    products_count,
+    COUNT(*) AS customers,
+    ROUND(AVG(churn_90d::INT) * 100, 2) AS churn_rate_pct
+FROM customer
+GROUP BY products_count
+ORDER BY products_count;
+```
+
+### Customer Engagement Funnel
+```sql
+SELECT
+    COUNT(*) AS total_customers,
+    COUNT(*) FILTER (WHERE dormant_flag = FALSE) AS active_customers,
+    COUNT(*) FILTER (WHERE digital_engagement_score >= 40) AS digitally_engaged,
+    COUNT(*) FILTER (WHERE products_count >= 2) AS multi_product_customers,
+    COUNT(*) FILTER (WHERE total_balance_ngn >= 500000) AS high_value_customers
+FROM customer;
+```
+
+### Value × Risk Matrix
+```sql
+SELECT
+    CASE
+        WHEN total_balance_ngn >= 500000 THEN 'High Value'
+        WHEN total_balance_ngn >= 100000 THEN 'Mid Value'
+        ELSE 'Low Value'
+    END AS value_segment,
+    CASE
+        WHEN churn_90d = TRUE THEN 'Churned'
+        WHEN days_since_last_transaction > 60
+          OR digital_engagement_score < 40 THEN 'At Risk'
+        ELSE 'Stable'
+    END AS risk_status,
+    COUNT(*) AS customers
+FROM customer
+GROUP BY value_segment, risk_status
+ORDER BY value_segment, risk_status;
+```
 
 ## 📚 Lessons Learned
 
@@ -225,6 +283,7 @@ View complete analysis: See [SQL analysis.sql](https://github.com/user-attachmen
 3. **Engagement is Key**: Digital engagement proved to be the strongest predictor of retention
 4. **Product Cross-Sell**: Simple product bundling can dramatically reduce churn
 5. **Geographic Insights**: Regional patterns helped tailor retention strategies
+
 
 
 ## 👤 Author
