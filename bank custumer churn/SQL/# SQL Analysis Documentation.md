@@ -184,6 +184,8 @@ SELECT
 FROM customer
 GROUP BY engagement_band;
 ```
+<img width="293" height="119" alt="engagement band" src="https://github.com/user-attachments/assets/343ec018-3be4-40f6-8af5-b086dff82cc8" />
+
 
 
 ---
@@ -203,6 +205,7 @@ SELECT
 FROM customer
 GROUP BY account_age_band;
 ```
+<img width="229" height="117" alt="dormancy by age" src="https://github.com/user-attachments/assets/1b211c07-747c-4292-a52c-3210a24852bf" />
 
 
 
@@ -224,6 +227,7 @@ SELECT
 FROM customer
 GROUP BY value_segment;
 ```
+<img width="296" height="112" alt="value segment" src="https://github.com/user-attachments/assets/9e9a56a7-ef9f-4cd8-97a8-16d5b3be2381" />
 
 
 ---
@@ -241,6 +245,7 @@ FROM customer
 GROUP BY state
 ORDER BY churn_rate DESC;
 ```
+<img width="308" height="273" alt="Geography churn" src="https://github.com/user-attachments/assets/80842b39-c62c-4793-93a3-8a0ca31cc042" />
 
 
 
@@ -263,6 +268,7 @@ SELECT
 FROM customer
 GROUP BY inactivity_band;
 ```
+<img width="273" height="139" alt="inativity band" src="https://github.com/user-attachments/assets/54839887-ecfa-4c7e-b10e-f2e59c92e425" />
 
 
 
@@ -283,6 +289,8 @@ FROM customer
 GROUP BY products_count
 ORDER BY products_count;
 ```
+<img width="293" height="205" alt="products depth" src="https://github.com/user-attachments/assets/94389f61-ca07-46d9-9738-651c5579a403" />
+
 
 
 ---
@@ -302,6 +310,7 @@ SELECT
     COUNT(*) FILTER (WHERE total_balance_ngn >= 500000) AS high_value_customers
 FROM customer;
 ```
+<img width="635" height="67" alt="engagement funnel" src="https://github.com/user-attachments/assets/bdeea1af-b6e4-41ea-a9ac-e246b0189d94" />
 
 
 ---
@@ -333,6 +342,7 @@ FROM customer
 GROUP BY value_segment, risk_status
 ORDER BY value_segment, risk_status;
 ```
+<img width="268" height="247" alt="value x risk" src="https://github.com/user-attachments/assets/cbad4a0f-e377-4697-8e0f-e2164aa7332f" />
 
 
 
@@ -352,30 +362,15 @@ WHERE total_balance_ngn >= 500000
   AND churn_90d = FALSE
   AND (digital_engagement_score < 40 OR days_since_last_transaction > 60);
 ```
+<img width="691" height="159" alt="high customer at risk" src="https://github.com/user-attachments/assets/4e67bc14-dcee-4183-a697-76fdcb69aff2" />
 
 
 
 ---
 
-### 5. Growth Target Customers
-
-**Purpose:** Identify highly engaged low-balance customers with growth potential.
-
-```sql
-SELECT
-    customer_id,
-    products_count,
-    digital_engagement_score,
-    total_balance_ngn
-FROM customer
-WHERE digital_engagement_score >= 70
-  AND total_balance_ngn < 100000
-  AND churn_90d = FALSE;
-```
-
-
 
 ---
+
 
 
 
