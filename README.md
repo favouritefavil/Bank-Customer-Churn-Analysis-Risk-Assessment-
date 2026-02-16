@@ -24,9 +24,9 @@ This project identifies key drivers of customer attrition and provides data-driv
 
 ### 📊 Dashboards
 View the complete analysis dashboards:
-- **[Portfolio & Risk Overview](dashboards/customer_portfolio_1.PNG)** - Customer distribution, value segments, engagement metrics
-- **[Product & Engagement Analysis](dashboards/customer_portfolio_2.PNG)** - Product depth, digital engagement, customer funnel
-- **[Geographic & Risk Distribution](dashboards/customer_portfolio_3.PNG)** - State-level analysis, activity patterns, risk matrix
+- **[Portfolio & Risk Overview](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/dashboard/Customer%20Portfolio%20Dashbord%201.PNG)** - Customer distribution, value segments, engagement metrics
+- **[Product & Engagement Analysis]([dashboards/customer_portfolio_2.PNG](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/dashboard/Customer%20Portfolio%20Dashbord%202.PNG))** - Product depth, digital engagement, customer funnel
+- **[Geographic & Risk Distribution]([dashboards/customer_portfolio_3.PNG](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/dashboard/Customer%20Portfolio%20Dashbord%203.PNG))** - State-level analysis, activity patterns, risk matrix
 
 ### Top Insights
 
@@ -106,6 +106,8 @@ bank_churn_project/
 ### 4. **Engagement Funnel**
 - Total customers → Active → Digitally Engaged → Multi-Product → High-Value
 - Identified drop-off points and conversion opportunities
+
+View the SQL queries used to carry out this analysis [view here](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/SQL/%23%20SQL%20Analysis%20Documentation.md)
 
 ## 💡 Strategic Recommendations
 
