@@ -25,8 +25,8 @@ This project identifies key drivers of customer attrition and provides data-driv
 ### 📊 Dashboards
 View the complete analysis dashboards:
 - **[Portfolio & Risk Overview](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/dashboard/Customer%20Portfolio%20Dashbord%201.PNG)** - Customer distribution, value segments, engagement metrics
-- **[Product & Engagement Analysis]([dashboards/customer_portfolio_2.PNG](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/dashboard/Customer%20Portfolio%20Dashbord%202.PNG))** - Product depth, digital engagement, customer funnel
-- **[Geographic & Risk Distribution]([dashboards/customer_portfolio_3.PNG](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/dashboard/Customer%20Portfolio%20Dashbord%203.PNG))** - State-level analysis, activity patterns, risk matrix
+- **[Product & Engagement Analysis](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/dashboard/Customer%20Portfolio%20Dashbord%202.PNG)** - Product depth, digital engagement, customer funnel
+- **[Geographic & Risk Distribution](https://github.com/favouritefavil/Bank-Customer-Churn-Analysis-Risk-Assessment-/blob/main/bank%20custumer%20churn/dashboard/Customer%20Portfolio%20Dashbord%203.PNG)** - State-level analysis, activity patterns, risk matrix
 
 ### Top Insights
 
